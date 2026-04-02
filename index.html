@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Ético -->
+    <title>Virgínia Almeida | Psicóloga Clínica e Psicanalista - Recife e Online</title>
+    <meta name="description" content="Psicóloga clínica especialista em psicanálise. Atendimento acolhedor em Recife-PE e online para todo o Brasil. 8 anos de experiência em saúde mental.">
+    <meta name="keywords" content="psicóloga clínica, psicanálise, terapia online, psicóloga recife, saúde mental, bem estar emocional, burnout">
+    <meta name="author" content="Virgínia Almeida">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://virginiaalmeidapsicologa.com">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://virginiaalmeidapsicologa.com">
+    <meta property="og:title" content="Virgínia Almeida | Psicóloga Clínica e Psicanalista">
+    <meta property="og:description" content="Acolhimento e escuta qualificada para sua saúde mental. Atendimento em Recife e online.">
+    <meta property="og:image" content="virginia-almeida-psicologa.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Schema.org Ético -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://virginiaalmeidapsicologa.com/#person",
+                "name": "Virgínia Almeida",
+                "jobTitle": "Psicóloga Clínica e Psicanalista",
+                "description": "Psicóloga clínica especialista em psicanálise com 8 anos de experiência em atendimento psicoterápico",
+                "url": "https://virginiaalmeidapsicologa.com",
+                "image": "virginia-almeida-psicologa.jpg",
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "FAFIRE - Pernambuco"
+                },
+                "knowsAbout": [
+                    "Psicanálise",
+                    "Psicologia Clínica",
+                    "Saúde Mental",
+                    "Bem-estar Emocional",
+                    "Burnout"
+                ],
+                "hasCredential": "CRP-PE Ativo",
+                "telephone": "+5581993453835",
+                "areaServed": "Brasil"
+            },
+            {
+                "@type": "LocalBusiness",
+                "@id": "https://virginiaalmeidapsicologa.com/#localbusiness",
+                "name": "Virgínia Almeida - Psicologia Clínica",
+                "description": "Consultório de psicologia clínica especializado em psicanálise e tratamento de burnout",
+                "url": "https://virginiaalmeidapsicologa.com",
+                "telephone": "+5581993453835",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Recife",
+                    "addressRegion": "PE",
+                    "addressCountry": "BR"
+                },
+                "serviceType": [
+                    "Psicoterapia Individual",
+                    "Psicanálise",
+                    "Tratamento de Burnout"
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --color-primary: #A67B5B;
+            --color-secondary: #C4A882;
+            --color-accent: #6B735A;
+            --color-bg: #FDFCF9;
+            --color-bg-alt: #E8D4C4;
+            --color-text: #3D3D3D;
+            --color-text-light: #6B6B6B;
+            --color-white: #FFFFFF;
+            --shadow-soft: 0 4px 20px rgba(166, 123, 91, 0.1);
+            --shadow-medium: 0 8px 30px rgba(166, 123, 91, 0.15);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 500; line-height: 1.2; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(2deg); }
+            66% { transform: translate(-20px, 20px) rotate(-2deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+        }
+
+        .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+
+        /* Hero Section - SEM NAVBAR */
+        .hero {
+            min-height: auto;
+            display: flex;
+            align-items: center;
+            padding: 2rem 2rem 0 2rem;
+            background: linear-gradient(135deg, #FDFCF9 0%, #F5EDE4 50%, #E8DDD4 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(181, 192, 154, 0.4) 0%, rgba(181, 192, 154, 0.1) 50%, transparent 70%);
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: float 8s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -10%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(196, 168, 130, 0.3) 0%, rgba(196, 168, 130, 0.05) 60%, transparent 70%);
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            animation: float 10s ease-in-out infinite reverse;
+            z-index: 0;
+        }
+
+        .blob-3 {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(166, 123, 91, 0.15) 0%, transparent 70%);
+            border-radius: 60% 40% 50% 50% / 50% 60% 40% 60%;
+            animation: float 12s ease-in-out infinite;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236B735A' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 2rem;
+        }
+
+        @media (min-width: 769px) {
+            .hero-container {
+                padding-bottom: 1rem;
+            }
+        }
+
+        .hero-content { animation: fadeInUp 1s ease; }
+
+        .hero-tag {
+            display: inline-block;
+            background-color: rgba(107, 115, 90, 0.1);
+            color: var(--color-accent);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--color-secondary);
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--color-text-light);
+            margin-bottom: 2rem;
+            max-width: 500px;
+            line-height: 1.8;
+        }
+
+        /* BOTÃO WHATSAPP */
+        .whatsapp-btn-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            animation: pulse 2s infinite;
+            border: none;
+            cursor: pointer;
+        }
+
+        .whatsapp-btn-hero:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-btn-hero svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 2px solid var(--color-secondary);
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        /* About Section - COM TEXTO BURNOUT */
+        .about {
+            padding: 2rem 2rem 6rem 2rem;
+            background-color: var(--color-white);
+            margin-top: -2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (min-width: 769px) {
+            .about {
+                padding: 1rem 2rem 6rem 2rem;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--color-secondary);
+            border-radius: 2px;
+        }
+
+        /* DESTAQUE BURNOUT */
+        .burnout-highlight {
+            background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 5px solid var(--color-primary);
+            text-align: left;
+        }
+
+        .burnout-highlight h3 {
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .burnout-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .burnout-list li {
+            padding: 0.75rem 0;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .burnout-list li::before {
+            content: '✦';
+            color: var(--color-secondary);
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .burnout-warning {
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            font-style: italic;
+        }
+
+        .about-text {
+            font-size: 1.125rem;
+            color: var(--color-text-light);
+            line-height: 1.9;
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+        .about-text p { margin-bottom: 1.5rem; }
+
+        .credentials {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .credential-item { text-align: center; }
+
+        .credential-number {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .credential-label {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            margin-top: 0.25rem;
+        }
+
+        /* Especialidade Section */
+        .especialidade {
+            padding: 6rem 2rem;
+            background-color: var(--color-bg-alt);
+        }
+
+        .especialidade-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .especialidade-card {
+            background-color: var(--color-white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .especialidade-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .especialidade-icon { font-size: 3rem; margin-bottom: 1rem; }
+
+        .especialidade-card h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .especialidade-card p {
+            color: var(--color-text-light);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* CTA Section - SEM FORMULÁRIO */
+        .cta-section {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #8B6F4E 100%);
+            padding: 5rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .whatsapp-btn-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 1.5rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+            border: 2px solid white;
+        }
+
+        .whatsapp-btn-large:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .whatsapp-btn-large svg {
+            width: 28px;
+            height: 28px;
+            fill: currentColor;
+        }
+
+        /* WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128C7E;
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-text);
+            color: var(--color-white);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        footer p { opacity: 0.8; }
+
+        footer a {
+            color: var(--color-secondary);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .hero h1 { font-size: 2.2rem; }
+            .hero-subtitle { font-size: 1.25rem; }
+            .hero-description { margin: 0 auto 2rem; font-size: 1rem; }
+            .hero-image { order: -1; }
+            .hero-image img { max-width: 280px; }
+            .section-title { font-size: 2rem; }
+            .credentials { gap: 2rem; }
+
+            .burnout-highlight { padding: 1.5rem; }
+            .burnout-highlight h3 { font-size: 1.3rem; }
+            .burnout-list li { font-size: 1rem; }
+
+            .cta-section h2 { font-size: 2rem; }
+            .cta-section p { font-size: 1.1rem; }
+            .whatsapp-btn-large {
+                padding: 1.25rem 2rem;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- INÍCIO: Hero sem Navbar -->
+    <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="blob-3"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">Psicologia Clínica</span>
+                <h1>Virgínia Almeida</h1>
+                <p class="hero-subtitle">Especialista em Psicanálise</p>
+                <p class="hero-description">
+                    Você se sente cansada por dentro mas não sabe explicar por quê? 
+                    Ofereço acolhimento, escuta qualificada e um espaço seguro para 
+                    que você possa cuidar da sua saúde mental.
+                </p>
+
+                <!-- BOTÃO WHATSAPP COM MENSAGEM PRÉ-DEFINIDA -->
+                <a href="https://wa.me/5581993453835?text=Oi!%20Gostaria%20de%20marcar%20uma%20consulta." 
+                   class="whatsapp-btn-hero" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Fale comigo pelo WhatsApp
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="virginia-almeida-psicologa.jpg" alt="Virgínia Almeida - Psicóloga Clínica" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim - COM TEXTO SOBRE BURNOUT -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Sobre Mim</h2>
+
+            <!-- DESTAQUE BURNOUT -->
+            <div class="burnout-highlight animate-on-scroll">
+                <h3>Você se sente cansada por dentro mas não sabe explicar por quê?</h3>
+                <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+                    Talvez você se reconheça em algum desses sinais:
+                </p>
+                <ul class="burnout-list">
+                    <li>Trabalha muito e ainda sente que é pouco</li>
+                    <li>Está sempre cansada, mas não consegue descansar</li>
+                    <li>Fica no celular pra fugir, mas sai pior do que entrou</li>
+                    <li>Sente que deveria estar bem, mas não está</li>
+                </ul>
+                <p class="burnout-warning">
+                    Não normalize esses sinais que o seu corpo te dá.
+                </p>
+            </div>
+
+            <div class="about-text animate-on-scroll">
+                <p>
+                    Sou Virgínia Almeida, psicóloga clínica dedicada a oferecer um espaço terapêutico 
+                    acolhedor para quem está vivenciando esse tipo de esgotamento emocional. 
+                    Há 8 anos ajudo mulheres a compreenderem que não estão "exagerando" — 
+                    estão sobrecarregadas e precisam de apoio.
+                </p>
+                <p>
+                    Formada em Psicologia pela <strong>FAFIRE - Pernambuco</strong>, tenho experiência 
+                    em atendimentos clínicos que priorizam a escuta qualificada e o respeito ao seu ritmo. 
+                    Acredito que cuidar da mente não é luxo, é necessidade. E você não precisa carregar 
+                    esse cansaço sozinha.
+                </p>
+                <p>
+                    Na terapia, trabalhamos juntas para entender o que está por trás desse vazio que não 
+                    passa, dessa sensação de nunca estar fazendo o suficiente. É possível se sentir melhor. 
+                    Dê a si mesma a chance de experimentar isso.
+                </p>
+            </div>
+
+            <div class="credentials animate-on-scroll">
+                <div class="credential-item">
+                    <div class="credential-number">8+</div>
+                    <div class="credential-label">Anos de Experiência</div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-number">FAFIRE</div>
+                    <div class="credential-label">Formação Acadêmica</div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-number">CRP-PE</div>
+                    <div class="credential-label">Registro Profissional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section class="especialidade">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Como Posso Ajudar</h2>
+            <p style="color: var(--color-text-light); margin-top: 1rem; font-size: 1.125rem;" class="animate-on-scroll">
+                Ofereço apoio especializado para situações como:
+            </p>
+            <div class="especialidade-grid">
+                <div class="especialidade-card animate-on-scroll">
+                    <div class="especialidade-icon">😔</div>
+                    <h3>Burnout e Esgotamento</h3>
+                    <p>Para quem vive exausta, sem energia, sentindo que está funcionando no automático mas não consegue parar.</p>
+                </div>
+                <div class="especialidade-card animate-on-scroll">
+                    <div class="especialidade-icon">🧠</div>
+                    <h3>Autoconhecimento</h3>
+                    <p>Entender seus padrões de pensamento, emoções e comportamentos para construir uma relação mais saudável consigo mesma.</p>
+                </div>
+                <div class="especialidade-card animate-on-scroll">
+                    <div class="especialidade-icon">🛡️</div>
+                    <h3>Espaço de Acolhimento</h3>
+                    <p>Um ambiente seguro e confidencial onde você pode dizer o que sente sem medo de julgamentos ou comparações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final - SEM FORMULÁRIO -->
+    <section class="cta-section" id="contato">
+        <h2>Vamos conversar?</h2>
+        <p>
+            Você não precisa esperar o cansaço passar sozinha. Estou aqui para te ajudar 
+            a entender o que está acontecendo e encontrar caminhos para se sentir bem de verdade.
+        </p>
+        <a href="https://wa.me/5581993453835?text=Oi!%20Gostaria%20de%20marcar%20uma%20consulta." 
+           class="whatsapp-btn-large" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Clique aqui para conversar no WhatsApp
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Virgínia Almeida - Psicóloga Clínica e Psicanalista</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">CRP-PE Ativo | Psicoterapia Presencial e Online</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem;">
+            <a href="blog.html">Blog</a> | 
+            <a href="https://wa.me/5581993453835?text=Oi!%20Gostaria%20de%20marcar%20uma%20consulta.">WhatsApp</a>
+        </p>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5581993453835?text=Oi!%20Gostaria%20de%20marcar%20uma%20consulta." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Fale pelo WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Animação de entrada ao scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
