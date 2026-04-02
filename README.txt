@@ -15,33 +15,6 @@ ARQUIVOS INCLUSOS:
 CONFIGURAÇÃO DO GOOGLE TAG MANAGER:
 -----------------------------------
 
-1. CRIAR CONTA NO GTM:
-   - Acesse: https://tagmanager.google.com
-   - Clique em "Criar Conta"
-   - Nome da conta: "Virgínia Almeida"
-   - Nome do container: "psivirginialmeida.com.br"
-   - Plataforma: "Web"
-   - Clique em "Criar"
-
-2. OBTER SEU ID DO GTM:
-   Após criar, você verá um código como:
-   GTM-XXXXXXX (onde XXXXXXX são letras e números)
-
-   Exemplo real: GTM-5FJX6, GTM-K2HGBR4, etc.
-
-3. SUBSTITUIR NO SITE:
-   Abra index.html e blog.html
-   Procure por: GTM-XXXXXXX (aparece 2 vezes em cada arquivo)
-   Substitua por seu ID real (ex: GTM-ABC1234)
-
-   Locais para substituir:
-   - Linha ~10 (código no <head>)
-   - Linha ~210 (código no <body>)
-
-4. PUBLICAR NO GTM:
-   - No painel do GTM, clique em "Enviar" (Submit)
-   - Nome da versão: "Primeira versão"
-   - Clique em "Publicar"
 
 TRÁFEGO PAGO - CONFIGURAÇÕES RECOMENDADAS:
 ------------------------------------------
