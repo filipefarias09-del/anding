@@ -68,7 +68,6 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(119, 140, 67, 0.3);
         }
-        /* Ícone Branco e Transparente */
         .btn-icon { width: 22px; height: 22px; object-fit: contain; filter: brightness(0) invert(1); background: transparent; }
 
         /* Hero Section */
@@ -87,7 +86,7 @@
         .about-img img { width: 100%; border-radius: 20px; }
         .crp-badge { background: var(--bg-light); padding: 25px; border-radius: 10px; margin-top: 30px; font-size: 0.9rem; border-left: 4px solid var(--primary); }
 
-        /* Como Funciona o Atendimento */
+        /* Como Funciona */
         .how-it-works { padding: 100px 0; text-align: center; background-color: var(--secondary); }
         .how-it-works h2 { font-size: 2.5rem; margin-bottom: 50px; color: var(--primary); }
         .steps-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px; }
@@ -96,7 +95,7 @@
         .step-card h3 { font-size: 1.4rem; color: var(--primary); margin-bottom: 15px; }
         .step-card p { font-size: 0.95rem; color: var(--text-dark); line-height: 1.5; }
 
-        /* Workshop & Palestras */
+        /* Services */
         .services { padding: 80px 0; text-align: center; background: var(--white); }
         .workshop-preview { margin-top: 40px; text-align: center; }
         .workshop-preview img { width: 100%; max-width: 300px; border-radius: 15px; margin: 20px auto 0; display: block; box-shadow: 0 10px 20px rgba(119, 140, 67, 0.1); }
@@ -104,9 +103,21 @@
         footer { background: #5a6b32; color: #F5F5DC; padding: 60px 0; text-align: center; }
         .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 10px; display: block; color: #F5F5DC; }
 
+        /* Responsive Mobile Styles */
         @media (max-width: 768px) {
-            .hero, .about-flex { flex-direction: column; text-align: center; }
-            .hero-image { order: -1; }
+            /* Hero Reordering */
+            .hero { flex-direction: column; text-align: center; gap: 30px; }
+            .hero-text { display: contents; } /* Libera h1 e p para o grid do pai */
+            .hero h1 { order: 1; }
+            .hero-image { order: 2; margin: 10px 0 20px 0; }
+            .hero-text p { order: 3; }
+            .hero-text .btn-cta { order: 4; margin: 0 auto; }
+
+            /* About Reordering */
+            .about-flex { flex-direction: column; text-align: center; gap: 40px; }
+            .about-content { order: 1; }
+            .about-img { order: 2; }
+            
             .steps-grid { flex-direction: column; align-items: center; }
             .step-card { max-width: 100%; }
         }
@@ -149,7 +160,7 @@
                 <h2 style="font-size: 2.8rem; margin-bottom: 25px;">Sobre Mim</h2>
                 <p>Sou Virgínia, uma mulher que, desde muito cedo, descobriu que a sua maior paixão era o outro: suas histórias, suas pausas e seus dizeres. Com 8 anos de caminhada na psicologia, aprendi que cada sessão é, na verdade, a criação de uma nova arte feita a quatro mãos.</p>
 
-                <p>A terapia é, antes de tudo, um compromisso com você. No meu consultório, o foco não é apenas o alívio imediato dos sintomas, mas a compreensão profunda de como você se relaciona com o mundo e com as suas próprias emoções.</p>
+                <p style="margin-top: 15px;">A terapia é, antes de tudo, um compromisso com você. No meu consultório, o foco não é apenas o alívio imediato dos sintomas, mas a compreensão profunda de como você se relaciona com o mundo e com as suas próprias emoções.</p>
                 <div class="crp-badge">
                     <p><strong>CRP 02/22005</strong></p>
                     <p>Psicóloga Clínica</p>
